@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     @IBAction func calculatePressed(_ sender: UIButton) {
         let height = heightSlider.value
         let weight = weightSlider.value
+        //
 //        what does pow, first value is the value that you want to x, second is the value for how many times you want to multiply it
         let bmi = weight / pow(height, 2)
     }
