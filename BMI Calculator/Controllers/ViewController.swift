@@ -34,7 +34,8 @@ class ViewController: UIViewController {
 //  what does pow, first value is the value that you want to x, second is the value for how many times you want to multiply it
         
         // fix the error  
-        let bmi = weight / pow(height, 2)
+        let bmi = weight / (height * height)
+        print(bmi)
     }
     
 }
