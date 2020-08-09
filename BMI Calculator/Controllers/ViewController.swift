@@ -35,7 +35,11 @@ class ViewController: UIViewController {
         
         // fix the error  
         let bmi = weight / (height * height)
-        print(bmi)
+        
+        let secondVC = SecondViewConroller()
+        secondVC.bmiValue = String(format: "%.1f", bmi)
+        
+        self.present(secondVC, animated: true, completion: nil)
     }
     
 }
